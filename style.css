@@ -1,8 +1,9 @@
 :root {
   --BGColor: #000103;
   --White: #ffffff;
-  --Purple: #2822d3;
-  --Orange: #e99b35;
+  --Purple: #231ebd;
+  --Orange: #d07600;
+  --DarkOrange: #c16d00;
   --SidePadding: 1.5rem;
 
   --BiggestWidth: 1600px;
@@ -25,7 +26,13 @@ body {
 }
 button {
   background-color: var(--Orange);
+  border: none;
   color: var(--White);
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--DarkOrange);
+  color: #f6f6f6;
 }
 .contents-container {
   padding: 0 var(--SidePadding);
@@ -64,7 +71,6 @@ header .contents-container {
   justify-content: flex-start;
   padding-top: 90px;
   padding-bottom: 80px;
-  width: 100%;
   max-width: var(--BiggestWidth);
 }
 header h1 {
@@ -82,6 +88,7 @@ header h2 {
   line-height: 4rem;
 }
 header button {
+  border: none;
   border-radius: 15px;
   font-size: 3rem;
   margin-top: 2.75rem;
