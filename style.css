@@ -37,34 +37,43 @@ nav .contents-container {
   width: var(--BiggestWidth);
 }
 nav h1 {
-  font-size: 3rem;
+  font-size: 2.9rem;
 }
 header {
   border-bottom: 3px solid var(--Purple);
   display: grid;
-  height: 500px;
+  height: 560px;
   justify-content: center;
   margin: auto;
   width: 100%;
 }
 header .contents-container {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 80px;
   width: var(--BiggestWidth);
 }
 header h1 {
   font-size: 5rem;
+  font-weight: 300;
   margin: 0;
+}
+header h1 p {
+  display: inline;
+  font-weight: bold;
 }
 header h2 {
   font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 4rem;
 }
 header button {
   border-radius: 15px;
   font-size: 3rem;
-  margin-top: 3.5rem;
-  padding: 0.5rem 1.25rem;
+  margin-top: 2.75rem;
+  padding: 0.5rem 1.5rem;
 }
 .section__projects {
   border-bottom: 3px solid var(--Purple);
@@ -87,7 +96,7 @@ header button {
   background-color: var(--Purple);
   border-radius: 15px;
   height: 240px;
-  width: 33%;
+  width: 480px;
 }
 .section__about-me {
   border-bottom: 3px solid var(--Purple);
@@ -107,6 +116,10 @@ header button {
 }
 .section__about-me img {
   /* height: 300px; */
+}
+.section__about-me .about-me__buttons-container {
+  display: flex;
+  gap: 2.9rem;
 }
 .section__about-me button {
   background-color: rgba(0, 0, 0, 0);
