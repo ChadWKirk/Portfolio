@@ -28,9 +28,13 @@ I'm going for a dark, underground and edgey mood.
 - orange (cta)
 - white (text)
 
+[Coolors Scheme 1](https://coolors.co/000103-2822d3-ffffff-e99b35)
+
 ###Fonts:
 
 These are just some fonts that I might use.
+
+- https://www.fontspace.com/johnson-rock-font-f40541
 
 - https://www.fontspace.com/help-me-font-f70320
 
