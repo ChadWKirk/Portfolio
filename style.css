@@ -1,0 +1,133 @@
+:root {
+  --BGColor: #000103;
+  --White: #ffffff;
+  --Purple: #2822d3;
+  --Orange: #e99b35;
+  --SidePadding: 1.5rem;
+
+  --BiggestWidth: 1600px;
+  --MediumWidth: 1425px;
+  --LeastWidth: 1300px;
+}
+
+body {
+  background-color: var(--BGColor);
+  color: var(--White);
+}
+button {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.contents-container {
+  padding: 0 var(--SidePadding);
+}
+
+nav {
+  border-bottom: 3px solid var(--Purple);
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+nav .contents-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: var(--BiggestWidth);
+}
+nav h1 {
+  font-size: 3rem;
+}
+header {
+  border-bottom: 3px solid var(--Purple);
+  display: grid;
+  height: 500px;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+header .contents-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: var(--BiggestWidth);
+}
+header h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+header h2 {
+  font-size: 1.75rem;
+}
+header button {
+  border-radius: 15px;
+  font-size: 3rem;
+  margin-top: 3.5rem;
+  padding: 0.5rem 1.25rem;
+}
+.section__projects {
+  border-bottom: 3px solid var(--Purple);
+  display: grid;
+  grid-template-rows: 1fr 240px 1fr;
+  justify-content: center;
+  width: 100%;
+}
+.section__projects h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.project-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 8rem;
+  width: var(--BiggestWidth);
+}
+.project-cards a {
+  background-color: var(--Purple);
+  border-radius: 15px;
+  height: 240px;
+  width: 33%;
+}
+.section__about-me {
+  border-bottom: 3px solid var(--Purple);
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 2rem 0;
+  width: 100%;
+}
+.section__about-me .contents-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: var(--BiggestWidth);
+}
+.section__about-me h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.section__about-me img {
+  /* height: 300px; */
+}
+.section__about-me button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  color: #e7e7e7;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.section__about-me button::after {
+  content: "";
+  display: block;
+  background-color: var(--Orange);
+  margin: auto;
+  margin-top: 3px;
+  width: 80%;
+  height: 6px;
+}
+.section__about-me p {
+  font-size: 1.5rem;
+  max-height: 330px;
+  overflow-y: scroll;
+  max-width: 60ch;
+}

@@ -67,3 +67,5 @@ Project Cards
 1. **Persuassion Section** - list some reasons why a hiring manager should hire me. Could be what I know, metrics on projects, projects I've worked on (open source, etc. brand recognition social proof), or testimonials/reviews.
 
 1. **Call To Action Section** - in this case it is a contact form section since I want hiring managers to contact me. Also include a phone button to call/text
+
+
