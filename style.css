@@ -80,6 +80,7 @@ header button {
   display: grid;
   grid-template-rows: 1fr 240px 1fr;
   justify-content: center;
+  padding-bottom: 3.7rem;
   width: 100%;
 }
 .section__projects h1 {
@@ -88,15 +89,35 @@ header button {
 }
 .project-cards {
   display: flex;
-  justify-content: space-around;
   gap: 8rem;
+  justify-content: space-around;
   width: var(--BiggestWidth);
 }
-.project-cards a {
-  background-color: var(--Purple);
+.project-card {
+  background-color: var(--White);
   border-radius: 15px;
-  height: 240px;
+  color: var(--BGColor);
+  height: 320px;
+  outline: 6px solid var(--Purple);
   width: 480px;
+}
+.project-card img {
+  background-color: var(--Purple);
+  height: 65%;
+  width: 100%;
+}
+.project-card__info-container {
+  padding: 0.5rem;
+}
+.project-card__info-container a {
+  font-weight: bold;
+}
+.project-card__info-container-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+.project-card__info-container-buttons p {
+  margin: 0;
 }
 .section__about-me {
   border-bottom: 3px solid var(--Purple);
