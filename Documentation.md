@@ -68,4 +68,12 @@ Project Cards
 
 1. **Call To Action Section** - in this case it is a contact form section since I want hiring managers to contact me. Also include a phone button to call/text
 
+Idea for cool purple light:
 
+When mouse moves, a purple geometric pattern is shown in a certain px radius around the cursor's position. fades in and fades out.
+
+Could be done by:
+
+- putting the geometric image in background
+- on mouse move, run css animation that fades in a blurred circle with blend mode to reveal background image
+- the blurred circle's position will change based on cursor position
