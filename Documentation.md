@@ -68,6 +68,17 @@ Project Cards
 
 1. **Call To Action Section** - in this case it is a contact form section since I want hiring managers to contact me. Also include a phone button to call/text
 
+##Technical Documentation:
+
+###CSS:
+
+- font-awesome - uses font-awesome-4.7 min css for icons [font-awesome get started](https://fontawesome.com/v4/get-started/)
+- Normalize.css - uses normalize.css to flatten out browser inconsitencies in CSS [normalize.css](https://github.com/necolas/normalize.css/)
+
+###Images:
+
+- Optimization - uses TinyPNG to optimize images [TinyPNG](https://tinypng.com/)
+
 Idea for cool purple light:
 
 When mouse moves, a purple geometric pattern is shown in a certain px radius around the cursor's position. fades in and fades out.
