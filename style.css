@@ -61,6 +61,7 @@ nav h1 {
 }
 header {
   border-bottom: 3px solid var(--Purple);
+  font-family: sans-serif;
   height: 560px;
   width: 100%;
 }
@@ -121,7 +122,7 @@ header button {
   background-color: var(--White);
   border-radius: 15px;
   color: var(--BGColor);
-  height: 320px;
+  height: 400px;
   outline: 6px solid var(--Purple);
   width: 480px;
 }
@@ -135,13 +136,22 @@ header button {
 }
 .project-card__info-container a {
   font-weight: bold;
+  font-family: sans-serif;
+  color: grey;
+}
+.project-card__info-container a:hover {
+  color: rgb(81, 81, 81);
 }
 .project-card__info-container-buttons {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
 }
 .project-card__info-container-buttons p {
   margin: 0;
+}
+.project-card__info-container-buttons a:hover {
+  color: var(--DarkOrange);
 }
 .section__about-me {
   border-bottom: 3px solid var(--Purple);

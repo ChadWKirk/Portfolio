@@ -77,3 +77,7 @@ Could be done by:
 - putting the geometric image in background
 - on mouse move, run css animation that fades in a blurred circle with blend mode to reveal background image
 - the blurred circle's position will change based on cursor position
+
+Idea for project card hover effect:
+
+When user hovers over project card, img turns into gif that quickly shows the project's main functions
