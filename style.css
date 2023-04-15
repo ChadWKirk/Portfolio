@@ -1,14 +1,21 @@
 :root {
   --BGColor: #121212;
+  --LightBlack: #252525;
   --White: #ffffff;
-  --Purple: #2811ac;
-  --Orange: #d07600;
+  --Purple: #7e57ee;
+  --Orange: #cb851d;
   --DarkOrange: #c16d00;
   --SidePadding: 1.5rem;
 
   --BiggestWidth: 1600px;
   --MediumWidth: 1425px;
   --LeastWidth: 1300px;
+
+  /* Uses golden ratio for type scaling */
+  --FontSize1: 4.236rem;
+  --FontSize2: 2.618rem;
+  --FontSize3: 1.618rem;
+  --FontSize4: 1rem;
 }
 
 @font-face {
@@ -40,14 +47,11 @@ button:hover {
 
 nav {
   border-bottom: 3px solid var(--Purple);
-  background-color: var(--BGColor);
   display: flex;
-  height: 80px;
+  height: 64px;
   justify-content: center;
   margin: auto;
   width: 100%;
-  position: fixed;
-  top: 0;
 }
 nav .contents-container {
   align-items: center;
@@ -58,28 +62,14 @@ nav .contents-container {
 }
 nav h1 {
   font-family: JohnsonRock;
-  font-size: 2.9rem;
+  font-size: var(--FontSize2);
   /* letter-spacing: 1px; */
   font-weight: 300;
 }
-nav button,
-nav a {
-  background-color: rgba(0, 0, 0, 0);
-  color: var(--Orange);
-  font-size: 2.05rem;
-  font-family: sans-serif;
-  margin-left: 1.2rem;
-  text-decoration: none;
-}
-nav button:hover,
-nav a:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: var(--DarkOrange);
-}
 header {
   border-bottom: 3px solid var(--Purple);
+  font-family: sans-serif;
   height: 560px;
-  margin-top: 80px;
   width: 100%;
 }
 header .contents-container {
@@ -92,23 +82,27 @@ header .contents-container {
   max-width: var(--BiggestWidth);
 }
 header h1 {
-  font-size: 5rem;
-  font-weight: 300;
+  font-family: "Krub";
+  font-size: var(--FontSize1);
+  line-height: 128px;
+  font-weight: 400;
   margin: 0;
 }
 header h1 p {
   display: inline;
-  font-weight: bold;
+  font-weight: 700;
 }
 header h2 {
-  font-size: 1.75rem;
-  font-weight: 300;
-  line-height: 4rem;
+  font-family: "Krub";
+  font-size: var(--FontSize3);
+  font-weight: 400;
+  line-height: 24px;
+  color: #b0b0b0;
 }
 header button {
   border: none;
   border-radius: 15px;
-  font-size: 3rem;
+  font-size: var(--FontSize2);
   margin-top: 2.75rem;
   padding: 0.5rem 1.5rem;
 }
@@ -118,54 +112,84 @@ header button {
   grid-template-rows: 1fr auto 1fr;
   justify-content: center;
   /* padding-bottom: 1.7rem; */
-  width: 100%;
+  /* width: 100%; */
+  min-height: 899px;
+  padding: 3.3125rem var(--SidePadding);
 }
 .section__projects h1 {
   font-family: HelpMe;
   font-weight: 300;
   letter-spacing: 11px;
-  font-size: 3rem;
+  font-size: var(--FontSize2);
   text-align: center;
 }
 .project-cards {
-  padding: 0 var(--SidePadding);
+  /* padding: 0 var(--SidePadding); */
   display: flex;
   flex-wrap: wrap;
-  gap: 2.75rem;
-  justify-content: center;
-  max-width: var(--BiggestWidth);
+  gap: 80px;
+  justify-content: space-between;
+  /* max-width: var(--BiggestWidth); */
+  margin-top: 3.65rem;
 }
 .project-card {
-  font-family: sans-serif;
-  background-color: #000000;
-  border-radius: 15px;
-  box-shadow: 4px 2px 8px 5px rgba(0, 0, 0, 0.425);
-  color: #fff;
-  height: 480px;
-  outline: 6px solid var(--Purple);
-  width: 480px;
+  background-color: #d9d9d9;
+  border-radius: 4px;
+  color: var(--BGColor);
+  height: 584px;
+  width: 320px;
+  font-family: "Krub";
 }
 .project-card img {
   background-color: var(--Purple);
-  height: 65%;
+  height: 348px;
   width: 100%;
 }
 .project-card__info-container {
-  padding: 0.5rem 1rem;
+  padding: 1.75rem 1.25rem;
 }
 .project-card__info-container a {
-  font-weight: bold;
-  font-family: sans-serif;
-  color: grey;
-  font-size: 1.15rem;
+  font-weight: 600;
+  font-size: var(--FontSize3);
+  line-height: 24px;
+  text-decoration: none;
+  color: var(--BGColor);
 }
 .project-card__info-container a:hover {
-  color: rgb(81, 81, 81);
+  color: var(--DarkOrange);
+  text-decoration: underline;
+}
+.project-card__description-container {
+  margin-top: 1.375rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.project-card__description {
+  color: var(--LightBlack);
+  font-size: var(--FontSize4);
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+}
+.project-card__tech-stack {
+  margin: 0;
+  color: #000;
+  font-weight: 500;
+  font-size: var(--FontSize4);
+  font-style: italic;
+  line-height: 16px;
 }
 .project-card__info-container-buttons {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: var(--BGColor);
+  margin-top: 3.45rem;
+}
+.project-card__info-container-buttons a {
+  font-size: var(--FontSize4);
+  font-weight: 700;
 }
 .project-card__info-container-buttons p {
   margin: 0;
@@ -177,7 +201,8 @@ header button {
   border-bottom: 3px solid var(--Purple);
   display: flex;
   justify-content: center;
-  padding: 4rem 0 2rem 0;
+  padding: 4.3125rem 0;
+  /* min-height: 820px; */
   width: 100%;
 }
 .section__about-me .contents-container {
@@ -186,8 +211,47 @@ header button {
   width: var(--BiggestWidth);
 }
 .section__about-me h1 {
-  font-size: 3rem;
+  font-size: var(--FontSize1);
+  font-family: "Krub";
+  line-height: 64px;
+  font-weight: 400;
   margin: 0;
+  margin-bottom: 5.25rem;
+  padding: 0;
+}
+.section__about-me h1 p {
+  font-weight: 500;
+  font-size: var(--FontSize1);
+  font-family: "Krub";
+  line-height: 64px;
+  display: inline;
+}
+.about-me__img-gallery {
+  position: relative;
+}
+.about-me__img-gallery p {
+  overflow: visible !important;
+  width: 304px !important;
+  height: 304px !important;
+}
+#about-me__img-1 {
+  background-color: red;
+  position: relative;
+  z-index: 5;
+}
+#about-me__img-2 {
+  background-color: blue;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  z-index: 6;
+}
+#about-me__img-3 {
+  background-color: green;
+  position: absolute;
+  top: 46%;
+  left: 0%;
+  z-index: 7;
 }
 .section__about-me img {
   /* height: 300px; */
@@ -200,22 +264,137 @@ header button {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   cursor: pointer;
-  color: #e7e7e7;
-  font-size: 1.25rem;
-  font-weight: 600;
+  color: #cecece;
+  font-size: var(--FontSize3);
+  font-weight: 500;
+  font-family: "Krub";
 }
 .section__about-me button::after {
   content: "";
   display: block;
   background-color: var(--Orange);
   margin: auto;
-  margin-top: 3px;
-  width: 80%;
-  height: 6px;
+  margin-top: 8px;
+  width: 112px;
+  height: 4px;
 }
-.section__about-me p {
-  font-size: 1.5rem;
-  max-height: 330px;
+#about-me__paragraph-container {
+  font-size: var(--FontSize4);
+  font-family: "Krub";
+  line-height: 24px;
+  height: 400px;
   overflow-y: scroll;
-  max-width: 60ch;
+  width: 550px;
+  margin-top: 1.6rem;
+  padding: 1rem;
+  outline: 1px solid #575757;
+  text-align: left;
+}
+.section__testimonials {
+  padding: 3.75rem 3.5rem 8.86rem 3.5rem;
+  font-family: "Krub";
+  border-bottom: 3px solid var(--Purple);
+}
+.section__testimonials h1 {
+  font-weight: 400;
+  font-size: var(--FontSize2);
+  line-height: 40px;
+  text-align: center;
+  margin: auto;
+}
+.section__testimonials h1 p {
+  font-weight: 600;
+  font-size: var(--FontSize2);
+  line-height: 40px;
+  display: inline;
+}
+.testimonial-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2.5625rem;
+  max-width: var(--BiggestWidth);
+  margin: auto;
+}
+.testimonial-card {
+  background-color: #000;
+  border-radius: 8px;
+  width: 488px;
+  height: 200px;
+  padding: 1.125rem;
+  margin-top: 3.125rem;
+}
+.testimonial-card__user-img {
+  width: 64px;
+  height: 64px;
+  background-color: #d9d9d9;
+  border-radius: 4px;
+  display: inline-block;
+}
+.testimonial-card__name {
+  font-size: var(--FontSize3);
+  font-weight: 600;
+  line-height: 24px;
+  display: inline;
+}
+.testimonial-card__review-text {
+  font-size: var(--FontSize4);
+  font-weight: 600;
+  line-height: 16px;
+  color: #cecece;
+}
+.testimonial-card__review-date {
+  font-size: var(--FontSize4);
+  font-weight: 600;
+  line-height: 16px;
+  color: #b0b0b0;
+}
+.section__technologies {
+  padding: 3.75rem 0 8.86rem 0;
+  font-family: "Krub";
+  border-bottom: 3px solid var(--Purple);
+}
+.section__technologies h1 {
+  font-weight: 400;
+  font-size: var(--FontSize2);
+  line-height: 40px;
+  text-align: center;
+  margin: auto;
+}
+.section__technologies h1 p {
+  font-weight: 600;
+  font-size: var(--FontSize2);
+  line-height: 40px;
+  display: inline;
+}
+.technologies-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+  margin-top: 3.38rem;
+}
+.technology-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.technology-item p {
+  font-size: var(--FontSize3);
+  font-weight: 400;
+  font-family: "Krub";
+}
+.technology-item__img-container {
+  width: 104px;
+  height: 118px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.technology-item img {
+  width: 104px;
 }

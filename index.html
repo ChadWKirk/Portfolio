@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <title>Chad Kirk</title>
@@ -14,15 +23,9 @@
       <div class="contents-container">
         <h1>Chad Kirk</h1>
         <ul>
-          <a href="tel:504-575-4307" title="Call Chad">
-            <i class="fa fa-phone" aria-hidden="true"></i> (504)-575-4307
-          </a>
-          <a
-            href="mailto:chadwkirk@gmail.com"
-            title="mailto:chadwkirk@gmail.com"
-            ><i class="fa fa-envelope-o" aria-hidden="true"></i>
-            ChadWKirk@gmail.com</a
-          >
+          <button>Phone</button>
+          <button>Email</button>
+          <button>Ham</button>
         </ul>
       </div>
     </nav>
@@ -34,7 +37,7 @@
             <p>boring</p>
             portfolio.
           </h1>
-          <h2>Something something something</h2>
+          <h2>Wow. So awesome.</h2>
           <button><i>Projects</i></button>
         </div>
         <div><img /></div>
@@ -49,10 +52,17 @@
           </a>
           <div class="project-card__info-container">
             <a href="https://picpoccket.com" target="_blank">PicPocket</a>
-            <!-- <button>Learn More Icon</button> -->
-            <p>A site where users can make accounts and share images.</p>
+
+            <div class="project-card__description-container">
+              <p class="project-card__description">
+                A website where users can create accounts and share images.
+              </p>
+              <p class="project-card__tech-stack">Tech - MERN Stack</p>
+            </div>
             <div class="project-card__info-container-buttons">
-              <p>Tech - MERN Stack</p>
+              <a href="https://chadwkirk.github.io/PicPocket/" target="_blank"
+                >Documentation</a
+              >
               <a
                 href="https://github.com/ChadWKirk/PicPocket"
                 title="https://github.com/ChadWKirk/PicPocket"
@@ -69,8 +79,7 @@
             <p>Description</p>
             <div class="project-card__info-container-buttons">
               <p>Tech - MERN Stack</p>
-              <a href="#">GitHub</a>
-              <!-- <button>Learn More Icon</button> -->
+              <a href="#">GitHub</a><button>Learn More Icon</button>
             </div>
           </div>
         </div>
@@ -81,8 +90,7 @@
             <p>Description</p>
             <div class="project-card__info-container-buttons">
               <p>Tech - MERN Stack</p>
-              <a href="#">GitHub</a>
-              <!-- <button>Learn More Icon</button> -->
+              <a href="#">GitHub</a><button>Learn More Icon</button>
             </div>
           </div>
         </div>
@@ -90,15 +98,20 @@
     </section>
     <section class="section__about-me">
       <div class="contents-container">
-        <div>
-          <h1>About Me</h1>
-          <img />
+        <div class="about-me__img-gallery">
+          <p id="about-me__img-1">img</p>
+          <p id="about-me__img-2">img</p>
+          <p id="about-me__img-3">img</p>
         </div>
         <div>
+          <h1>
+            About
+            <p>Me</p>
+          </h1>
           <div class="about-me__buttons-container">
             <button>Short Story</button><button>Long Story</button>
           </div>
-          <p>
+          <p id="about-me__paragraph-container">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Reprehenderit similique velit ipsum commodi reiciendis! Corrupti
             unde commodi minus in qui quia ducimus molestias, ea, doloribus
@@ -114,6 +127,125 @@
             Minima ad dignissimos veritatis voluptates molestiae suscipit
             cupiditate rem culpa.
           </p>
+        </div>
+      </div>
+    </section>
+    <section class="section__testimonials">
+      <h1>
+        What My
+        <p>Users</p>
+        Say
+      </h1>
+      <div class="testimonial-gallery">
+        <div class="testimonial-card">
+          <div class="testimonial-card__user-img">img</div>
+          <p class="testimonial-card__name">User Name</p>
+          <p class="testimonial-card__review-text">
+            This thing that Chad built is really awesome. Hire this guy
+            immediately!
+          </p>
+          <p class="testimonial-card__review-date">Month, Year</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__user-img">img</div>
+          <p class="testimonial-card__name">User Name</p>
+          <p class="testimonial-card__review-text">
+            This thing that Chad built is really awesome. Hire this guy
+            immediately!
+          </p>
+          <p class="testimonial-card__review-date">Month, Year</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__user-img">img</div>
+          <p class="testimonial-card__name">User Name</p>
+          <p class="testimonial-card__review-text">
+            This thing that Chad built is really awesome. Hire this guy
+            immediately!
+          </p>
+          <p class="testimonial-card__review-date">Month, Year</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__user-img">img</div>
+          <p class="testimonial-card__name">User Name</p>
+          <p class="testimonial-card__review-text">
+            This thing that Chad built is really awesome. Hire this guy
+            immediately!
+          </p>
+          <p class="testimonial-card__review-date">Month, Year</p>
+        </div>
+      </div>
+    </section>
+    <section class="section__technologies">
+      <h1>
+        <p>Technologies</p>
+        I Use
+      </h1>
+      <div class="technologies-gallery">
+        <div class="technology-item">
+          <p>HTML 5</p>
+          <div class="technology-item__img-container">
+            <img src="images/html5.png" />
+          </div>
+        </div>
+        <div class="technology-item">
+          <p>CSS 5</p>
+          <div class="technology-item__img-container">
+            <img src="images/css3.png" />
+          </div>
+        </div>
+        <div class="technology-item">
+          <p>Javascript</p>
+          <div class="technology-item__img-container">
+            <img src="images/js.png" />
+          </div>
+        </div>
+        <div class="technology-item">
+          <p>React</p>
+          <div class="technology-item__img-container">
+            <img src="images/react.png" />
+          </div>
+        </div>
+        <div class="technology-item">
+          <p>MongoDB</p>
+          <div class="technology-item__img-container">
+            <img src="images/mongodb.png" style="width: 48px" />
+          </div>
+        </div>
+        <div class="technology-item">
+          <p>ExpressJS</p>
+          <div class="technology-item__img-container">
+            <img src="images/expressJS.png" />
+          </div>
+        </div>
+        <div class="technology-item">
+          <p>NodeJS</p>
+          <div class="technology-item__img-container">
+            <img src="images/nodeJS.png" />
+          </div>
+        </div>
+        <div class="technology-item">
+          <p>Git</p>
+          <div class="technology-item__img-container">
+            <img src="images/git.png" />
+          </div>
+        </div>
+        <div class="technology-item">
+          <p>NPM</p>
+          <div class="technology-item__img-container">
+            <img src="images/npm.png" />
+          </div>
+        </div>
+        <div class="technology-item">
+          <p>GitHub</p>
+          <div class="technology-item__img-container">
+            <img src="images/github.png" />
+          </div>
+        </div>
+        <div class="technology-item">
+          <p>Visual Studio Code</p>
+          <div class="technology-item__img-container">
+            <img src="images/vscode.png" />
+          </div>
         </div>
       </div>
     </section>

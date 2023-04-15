@@ -17,9 +17,11 @@ I will give a great first impression by
 
 This section is for listing the design elements, goals and structure of the portfolio.
 
+I used [Figma](https://www.figma.com/) to design this portfolio.
+
 ###Mood:
 
-I'm going for a dark, underground and edgey mood.
+I'm going for a dark, underground and edgy mood.
 
 ###Color Scheme:
 
@@ -28,15 +30,27 @@ I'm going for a dark, underground and edgey mood.
 - orange (cta)
 - white (text)
 
-[Coolors Scheme 1](https://coolors.co/000103-2822d3-ffffff-e99b35)
+The hex codes are still subject to change, so just look at the CSS variables.
 
 ###Fonts:
 
+Fonts being used include [JohnsonRock](https://www.fontspace.com/johnson-rock-font-f40541), [HelpMe](https://www.fontspace.com/help-me-font-f70320), and [Kruba](https://fonts.google.com/specimen/Krub?query=krub).
+
+**JohnsonRock** - My name in the nav bar
+
+**HelpMe** - Projects section title
+
+**Kruba** - Everything else
+
+Type Scaling / Font Sizes:
+
+Using the Golden Ratio for Type Scaling. [Type Scaling Calculator](https://typescale.com/)
+
+Font sizes are stored in CSS variables so I don't have to remember the rem values.
+
+Line heights are all multiples of 8 to make it easier to snap to 8pt (px) grid like I have it in Figma.
+
 These are just some fonts that I might use.
-
-- https://www.fontspace.com/johnson-rock-font-f40541
-
-- https://www.fontspace.com/help-me-font-f70320
 
 - https://www.fontspace.com/cf-nuclear-war-font-f21812
 
@@ -67,17 +81,6 @@ Project Cards
 1. **Persuassion Section** - list some reasons why a hiring manager should hire me. Could be what I know, metrics on projects, projects I've worked on (open source, etc. brand recognition social proof), or testimonials/reviews.
 
 1. **Call To Action Section** - in this case it is a contact form section since I want hiring managers to contact me. Also include a phone button to call/text
-
-##Technical Documentation:
-
-###CSS:
-
-- font-awesome - uses font-awesome-4.7 min css for icons [font-awesome get started](https://fontawesome.com/v4/get-started/)
-- Normalize.css - uses normalize.css to flatten out browser inconsitencies in CSS [normalize.css](https://github.com/necolas/normalize.css/)
-
-###Images:
-
-- Optimization - uses TinyPNG to optimize images [TinyPNG](https://tinypng.com/)
 
 Idea for cool purple light:
 
