@@ -398,3 +398,73 @@ header button {
 .technology-item img {
   width: 104px;
 }
+.section__contact {
+  font-family: "Krub";
+  max-width: var(--BiggestWidth);
+  padding: 8.75rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section__contact h1 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: var(--FontSize1);
+  line-height: 64px;
+}
+.section__contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.contact-form__input-block {
+}
+.contact-form__input-block p {
+  cursor: pointer;
+  color: #dedede;
+  font-size: var(--FontSize3);
+  font-weight: 200;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 1.4rem;
+}
+.contact-form__input-block input {
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  font-size: var(--FontSize4);
+  font-weight: 400;
+  line-height: 16px;
+  color: #000;
+  height: 32px;
+  padding: 0 0.75rem;
+  width: 284px;
+}
+#contact-form__message-input-field {
+  border-radius: 8px;
+  border: none;
+  background-color: #252525;
+  outline: 1px solid #9c9c9c;
+  color: #fff;
+  font-size: var(--FontSize4);
+  line-height: 20px;
+  font-weight: 400;
+  height: 160px;
+  padding: 0.75rem 0.75rem;
+  width: 360px;
+  resize: none;
+}
+input:focus,
+#contact-form__message-input-field:focus {
+  outline: 2px solid #54428b;
+}
+.section__contact button {
+  border-radius: 8px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.75rem 0.5rem;
+  height: 64px;
+  width: 384px;
+  white-space: nowrap;
+}

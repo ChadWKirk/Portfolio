@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,400;0,500;0,600;0,700;1,500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -248,6 +248,32 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="section__contact">
+      <div>
+        <h1>Contact Me!</h1>
+        <form method="post" action="/email_form.php">
+          <div class="contact-form__input-block">
+            <label for="name-input"><p>Name</p></label>
+            <input id="name-input" name="name_input" />
+          </div>
+          <div class="contact-form__input-block">
+            <label for="email-input"><p>Email</p></label>
+            <input id="email-input" name="email_input" />
+          </div>
+          <div class="contact-form__input-block">
+            <label for="contact-form__message-input-field"
+              ><p>Message</p></label
+            >
+            <textarea
+              id="contact-form__message-input-field"
+              name="message_input"
+            ></textarea>
+          </div>
+          <button type="submit">Send Me A Message!</button>
+        </form>
+      </div>
+      <div>img</div>
     </section>
   </body>
 </html>
