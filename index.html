@@ -252,7 +252,13 @@
     <section class="section__contact">
       <div>
         <h1>Contact Me!</h1>
-        <form name="portfolio_contact-form" method="POST" data-netlify="true">
+        <form
+          name="portfolio_contact-form"
+          method="POST"
+          data-netlify="true"
+          onsubmit="handleSubmit(event)"
+          action="/"
+        >
           <div class="contact-form__input-block">
             <label for="name-input"><p>Name</p></label>
             <input id="name-input" name="name_input" />
@@ -276,4 +282,22 @@
       <div>img</div>
     </section>
   </body>
+  <script>
+    const handleSubmit = (event) => {
+      event.preventDefault();
+
+      const myForm = event.target;
+      const formData = new FormData(myForm);
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => console.log("Form successfully submitted"))
+        .catch((error) => alert(error));
+    };
+
+    document.querySelector("form").addEventListener("submit", handleSubmit);
+  </script>
 </html>
