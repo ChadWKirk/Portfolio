@@ -1,11 +1,12 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
 
 # Big Picture Stuff
 
-Repo URL - [https://github.com/ChadWKirk/PicPocket](https://github.com/ChadWKirk/Portfolio)
+Repo URL - [https://github.com/ChadWKirk/Portfolio](https://github.com/ChadWKirk/Portfolio)
 
 Portfolio URL - [http://chad-kirk.com/](http://chad-kirk.com/)
 
