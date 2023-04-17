@@ -90,7 +90,7 @@ nav a:hover {
 }
 nav p {
   display: inline;
-  font-family: "Montserrat";
+  font-family: "Lora";
   font-size: var(--FontSize4);
   font-weight: 300;
   margin: 0;
@@ -125,10 +125,11 @@ header .contents-container {
 }
 header h1 {
   /* font-family: "Krub"; */
-  font-size: 144px;
+  font-size: 72px;
   color: #4e26ff;
   line-height: 220px;
-  font-weight: 400;
+  font-weight: 800;
+  text-transform: uppercase;
   margin: 0;
   position: relative;
   display: inline;
@@ -144,6 +145,17 @@ header h1::after {
   left: 20px;
   color: rgb(255, 255, 255);
   z-index: 1;
+}
+header h1::before {
+  content: "Another boring portfolio.";
+  position: absolute;
+  display: inline-block;
+  width: 1200px;
+  height: 100px;
+  top: 46px;
+  left: 0px;
+  color: rgb(11, 202, 255);
+  z-index: 3;
 }
 header h1 p {
   display: inline;
@@ -165,7 +177,7 @@ header button {
   display: inline;
   font-size: var(--FontSize2);
   font-weight: 600;
-  margin-top: 0.8rem;
+  margin-top: 3.35rem;
   margin-left: 2.85rem;
   padding: 0.5rem 1rem;
   font-family: "Roboto";
