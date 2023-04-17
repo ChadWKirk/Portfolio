@@ -8,7 +8,7 @@ nav_order: 1
 
 Repo URL - [https://github.com/ChadWKirk/Portfolio](https://github.com/ChadWKirk/Portfolio)
 
-Portfolio URL - [http://chad-kirk.com/](http://chad-kirk.com/)
+Portfolio URL - [https://chad-kirk.com/](https://chad-kirk.com/)
 
 ## Project Goals:
 

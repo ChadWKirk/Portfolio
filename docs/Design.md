@@ -41,10 +41,10 @@ Line heights are all multiples of 8 to make it easier to snap to 8pt (px) grid l
 
 These are just some fonts that I might use.
 
-- https://www.fontspace.com/cf-nuclear-war-font-f21812
+- [https://www.fontspace.com/cf-nuclear-war-font-f21812](https://www.fontspace.com/cf-nuclear-war-font-f21812)
 
-- https://www.fontspace.com/quarantino-2022-font-f75435
+- [https://www.fontspace.com/quarantino-2022-font-f75435](https://www.fontspace.com/quarantino-2022-font-f75435)
 
-- https://www.fontspace.com/ombudsman-stencil-font-f24814
+- [https://www.fontspace.com/ombudsman-stencil-font-f24814](https://www.fontspace.com/ombudsman-stencil-font-f24814)
 
-- https://www.fontspace.com/the-rockers-font-f88588
+- [https://www.fontspace.com/the-rockers-font-f88588](https://www.fontspace.com/the-rockers-font-f88588)
