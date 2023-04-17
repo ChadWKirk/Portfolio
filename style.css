@@ -134,7 +134,7 @@ header button {
   margin-top: 2.75rem;
   padding: 0.5rem 1.5rem;
 }
-@media (width < 750px) {
+@media (max-width: 750px) {
   header {
     height: 376px;
   }
