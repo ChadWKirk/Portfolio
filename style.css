@@ -111,7 +111,7 @@ nav p {
 header {
   /* border-bottom: 3px solid var(--Purple); */
   font-family: "Montserrat";
-  height: 560px;
+  height: 640px;
   width: 100%;
 }
 header .contents-container {
@@ -199,12 +199,13 @@ header button:hover {
   }
 }
 .section__projects {
-  border-bottom: 3px solid var(--Purple);
+  background-color: #313031;
+  /* border-bottom: 3px solid var(--Purple); */
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   justify-content: center;
   min-height: 899px;
-  padding: 3.3125rem var(--SidePadding);
+  padding: 6.5rem var(--SidePadding);
 }
 .section__projects h1 {
   font-family: "Montserrat";
