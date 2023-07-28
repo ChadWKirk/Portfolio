@@ -279,15 +279,16 @@ header button:hover header button i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 0px;
+  background-color: #fcfcfc86;
+  gap: 112px;
   justify-content: space-between;
   margin-top: 3.65rem;
+  box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .project-card {
-  background-color: #fcfcfc86;
   /* border-radius: 16px; */
   color: var(--BGColor);
-  box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
   display: flex;
   flex-direction: row;
   height: 584px;
@@ -299,10 +300,12 @@ header button:hover header button i {
   /* border-radius: 16px; */
 
   /* height: 348px; */
-  width: 100%;
+  width: 98%;
+  /* margin-top: -5px; */
+  /* margin-left: -40px; */
 }
 .project-card__info-container {
-  padding: 1.75rem 1.25rem;
+  padding: 5.25rem 0rem 5rem 1.25rem;
 }
 .project-card__info-container a {
   font-weight: 800;
@@ -330,6 +333,7 @@ header button:hover header button i {
 }
 .project-card__tech-stack {
   margin: 0;
+  /* margin-top: 32px; */
   color: #000;
   font-weight: 500;
   font-size: var(--FontSize3);
@@ -342,7 +346,7 @@ header button:hover header button i {
   align-items: start;
   gap: 0.5rem;
   color: var(--BGColor);
-  margin-top: 3.45rem;
+  margin-top: 4.75rem;
 }
 .project-card__info-container-buttons a {
   font-size: var(--FontSize4);
@@ -358,8 +362,11 @@ header button:hover header button i {
   background-color: var(--BGColor);
   color: var(--White) !important;
   border-radius: 16px;
-  padding: 1.5rem 1.25rem;
-  font-size: var(--FontSize3) !important;
+  padding: 1rem 0rem;
+  margin-top: 24px;
+  width: 200px;
+  text-align: center;
+  font-size: var(--FontSize4) !important;
 }
 @media (max-width: 750px) {
   .section__projects h1 {
