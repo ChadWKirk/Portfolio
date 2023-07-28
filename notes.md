@@ -41,3 +41,7 @@ About Me Section - different pic of me doing something, have Short Story and Lon
 Persuassion Section - list some reasons why they should hire you. Could be what you know, your metrics on projects, projects you've worked on (open source, etc. brand recognition social proof), or testimonials/reviews.
 
 Call To Action Section - in this case it is a contact form section since you want hiring managers to contact you. Also includ a phone button to call/text
+
+MOCKUPS:
+
+Use this - https://mediamodifier.com/mockup/macbook-laptop-front-view-mockup-generator/968

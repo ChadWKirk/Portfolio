@@ -250,6 +250,13 @@ header button:hover header button i {
 }
 .section__projects {
   background-color: #f1f1f1;
+  background: repeating-linear-gradient(
+    135deg,
+    #f0f0f0,
+    #f3f3f3 88px,
+    #c5c5c5 32px,
+    #c0c0c0 400px
+  );
   /* border-bottom: 3px solid var(--Purple); */
   display: grid;
   grid-template-rows: 1fr auto 1fr;
@@ -270,33 +277,36 @@ header button:hover header button i {
 }
 .project-cards {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 0px;
   justify-content: space-between;
   margin-top: 3.65rem;
 }
 .project-card {
-  background-color: #fcfcfc;
+  background-color: #fcfcfc86;
   /* border-radius: 16px; */
   color: var(--BGColor);
   box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
   height: 584px;
-  width: 320px;
+  width: 1280px;
   font-family: "Montserrat";
 }
 .project-card img {
-  background-color: var(--Purple);
+  /* background-color: var(--Purple); */
   /* border-radius: 16px; */
 
-  height: 348px;
+  /* height: 348px; */
   width: 100%;
 }
 .project-card__info-container {
   padding: 1.75rem 1.25rem;
 }
 .project-card__info-container a {
-  font-weight: 600;
-  font-size: var(--FontSize3);
+  font-weight: 800;
+  font-size: var(--FontSize2);
   line-height: 24px;
   text-decoration: none;
   color: var(--BGColor);
@@ -313,22 +323,23 @@ header button:hover header button i {
 }
 .project-card__description {
   color: var(--LightBlack);
-  font-size: var(--FontSize4);
+  font-size: var(--FontSize3);
   font-weight: 400;
-  line-height: 16px;
+  line-height: 32px;
   margin: 0;
 }
 .project-card__tech-stack {
   margin: 0;
   color: #000;
   font-weight: 500;
-  font-size: var(--FontSize4);
+  font-size: var(--FontSize3);
   font-style: italic;
-  line-height: 16px;
+  line-height: 32px;
 }
 .project-card__info-container-buttons {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   gap: 0.5rem;
   color: var(--BGColor);
   margin-top: 3.45rem;
@@ -342,6 +353,13 @@ header button:hover header button i {
 }
 .project-card__info-container-buttons a:hover {
   color: var(--DarkOrange);
+}
+.live-site-btn {
+  background-color: var(--BGColor);
+  color: var(--White) !important;
+  border-radius: 16px;
+  padding: 1.5rem 1.25rem;
+  font-size: var(--FontSize3) !important;
 }
 @media (max-width: 750px) {
   .section__projects h1 {
