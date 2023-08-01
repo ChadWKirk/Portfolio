@@ -437,7 +437,7 @@ header button:hover header button i {
   line-height: 64px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 5.25rem;
+  /* margin-bottom: 5.25rem; */
   padding: 0;
 }
 .section__about-me h1 p {
@@ -501,11 +501,11 @@ header button:hover header button i {
   font-family: "Krub";
   line-height: 24px;
   height: 400px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   max-width: 550px;
   margin-top: 1.6rem;
-  padding: 1rem;
-  outline: 1px solid #575757;
+  /* padding: 1rem; */
+  /* outline: 1px solid #575757; */
   text-align: left;
 }
 @media (max-width: 750px) {
