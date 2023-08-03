@@ -207,7 +207,7 @@ header button:hover header button i {
     align-items: flex-start;
   }
   header {
-    height: 496px;
+    height: 89vh;
   }
   header h1 {
     font-size: var(--FontSize2);
@@ -380,9 +380,9 @@ header button:hover header button i {
     padding: 1rem 1.75rem;
     margin-top: 3.65rem;
     flex-direction: row;
-    width: 94%;
-    /* height: 100%; */
-    /* min-height: 200%; */
+    width: 100%;
+    /* margin: 0; */
+    box-sizing: border-box;
   }
   .project-card {
     /* border-radius: 4px; */

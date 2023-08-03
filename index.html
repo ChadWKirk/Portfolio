@@ -58,13 +58,15 @@
     <header>
       <div class="contents-container">
         <h1>Another boring portfolio.</h1>
-        <button>
+        <button
+          onClick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'});"
+        >
           GO TO PROJECTS
           <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
         </button>
       </div>
     </header>
-    <section class="section__projects">
+    <section class="section__projects" id="projects">
       <div class="contents-container">
         <h1>PROJECTS</h1>
         <div class="project-cards">
