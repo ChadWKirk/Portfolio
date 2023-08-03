@@ -3,8 +3,8 @@
   --LightBlack: #252525;
   --White: #ffffff;
   --Purple: #443569;
-  --Orange: #ef7537;
-  --DarkOrange: #c16d00;
+  --Blue: #4969d1;
+  --DarkBlue: #0044c1;
   --SidePadding: 3rem;
 
   --BiggestWidth: 1200px;
@@ -33,13 +33,13 @@ body {
   padding-top: 2rem;
 }
 button {
-  background-color: var(--Orange);
+  background-color: var(--Blue);
   border: none;
   color: var(--White);
   cursor: pointer;
 }
 button:hover {
-  background-color: var(--DarkOrange);
+  background-color: var(--DarkBlue);
   color: #f6f6f6;
 }
 .contents-container {
@@ -86,7 +86,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: var(--Orange);
+  color: var(--Blue);
 }
 nav p {
   display: inline;
@@ -315,7 +315,7 @@ header button:hover header button i {
   color: var(--BGColor);
 }
 .project-card__info-container a:hover {
-  color: var(--DarkOrange);
+  color: var(--DarkBlue);
   text-decoration: underline;
 }
 .project-card__description-container {
@@ -356,7 +356,7 @@ header button:hover header button i {
   margin: 0;
 }
 .project-card__info-container-buttons a:hover {
-  color: var(--DarkOrange);
+  color: var(--DarkBlue);
 }
 .live-site-btn {
   background-color: var(--BGColor);
@@ -422,7 +422,7 @@ header button:hover header button i {
     margin: 0;
   }
   .project-card__info-container-buttons a:hover {
-    color: var(--DarkOrange);
+    color: var(--DarkBlue);
   }
   .project-card__description {
     /* height: 204px; */
@@ -479,7 +479,7 @@ header button:hover header button i {
     margin: 0;
   }
   .project-card__info-container-buttons a:hover {
-    color: var(--DarkOrange);
+    color: var(--DarkBlue);
   }
   .project-card__description {
     /* height: 204px; */
@@ -563,20 +563,20 @@ header button:hover header button i {
 .section__about-me button::after {
   content: "";
   display: block;
-  background-color: var(--Orange);
+  background-color: var(--Blue);
   margin: auto;
   margin-top: 8px;
   width: 112px;
   height: 4px;
 }
 #about-me__paragraph-container {
-  font-size: var(--FontSize4);
+  font-size: var(--FontSize3);
   font-family: "Krub";
-  line-height: 24px;
+  line-height: 48px;
   height: 400px;
   /* overflow-y: scroll; */
   max-width: 550px;
-  margin-top: 1.6rem;
+  margin-top: 5rem;
   /* padding: 1rem; */
   /* outline: 1px solid #575757; */
   text-align: left;
@@ -588,7 +588,7 @@ header button:hover header button i {
   .section__about-me h1 {
     font-size: var(--FontSize2);
     line-height: 40px;
-    margin-bottom: 5.25rem;
+    margin-bottom: 3.5rem;
     text-align: center;
   }
   .about-me__img-gallery {
@@ -610,7 +610,7 @@ header button:hover header button i {
   .section__about-me button::after {
     content: "";
     display: block;
-    background-color: var(--Orange);
+    background-color: var(--Blue);
     margin: auto;
     margin-top: 4px;
     width: 64px;
@@ -622,9 +622,9 @@ header button:hover header button i {
     height: auto;
     overflow-y: visible;
     width: 100%;
-    margin-top: 1.35rem;
     padding: 0;
     outline: none;
+    margin: auto;
   }
 }
 .section__testimonials {
@@ -812,8 +812,16 @@ header button:hover header button i {
   font-family: "Krub";
   max-width: var(--BiggestWidth);
   padding: 8.75rem 4rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section__contact * {
+  box-sizing: border-box;
 }
 .section__contact h1 {
   margin-top: 0;
@@ -825,6 +833,7 @@ header button:hover header button i {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
+  /* margin-top: 2rem; */
 }
 .contact-form__input-block {
 }
@@ -847,7 +856,7 @@ header button:hover header button i {
   color: #000;
   height: 32px;
   padding: 0 0.75rem;
-  width: 284px;
+  width: 100%;
 }
 #contact-form__message-input-field {
   border-radius: 8px;
@@ -860,7 +869,7 @@ header button:hover header button i {
   font-weight: 400;
   height: 160px;
   padding: 0.75rem 0.75rem;
-  width: 360px;
+  width: 100%;
   resize: none;
 }
 input:focus,
@@ -875,7 +884,8 @@ input:focus,
   color: #fff;
   padding: 0.75rem 0.5rem;
   height: 64px;
-  width: 384px;
+  /* width: 80%; */
+  margin: auto;
   white-space: nowrap;
 }
 @media (max-width: 1200px) {
@@ -896,8 +906,11 @@ input:focus,
     flex-direction: column;
     align-items: center;
     gap: 3.5rem;
+    margin-top: 4rem;
   }
   .contact-form__input-block {
+    width: 90%;
+    max-width: 400px;
   }
   .contact-form__input-block p {
     cursor: pointer;
@@ -918,7 +931,7 @@ input:focus,
     color: #000;
     height: 32px;
     padding: 0 0.75rem;
-    width: 284px;
+    /* width: 284px; */
   }
   #contact-form__message-input-field {
     border-radius: 8px;
@@ -931,7 +944,7 @@ input:focus,
     font-weight: 400;
     height: 160px;
     padding: 0.75rem 0.75rem;
-    width: 360px;
+    /* width: 360px; */
     resize: none;
   }
   input:focus,
@@ -939,14 +952,8 @@ input:focus,
     outline: 2px solid #54428b;
   }
   .section__contact button {
-    border-radius: 8px;
-    font-size: 2.25rem;
-    line-height: 40px;
-    font-weight: 700;
-    color: #fff;
-    padding: 0.75rem 0.5rem;
-    height: 64px;
-    width: 384px;
-    white-space: nowrap;
+    font-size: 1.25rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 }
